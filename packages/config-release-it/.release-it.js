@@ -41,7 +41,7 @@ module.exports = {
     tagName: `${packageName}-v${version}`,
     pushRepo: "git@github.com:mr-emeka/ghm.git",
     commitsPath: ".",
-    commitMessage: `feat(${scope}): released version v${version} [no ci]`,
+    commitMessage: ` chore(${scope}): released version v${version} [no ci]`,
     requireCommits: true,
     requireCommitsFail: false,
   },
@@ -49,11 +49,10 @@ module.exports = {
     publish: false,
   },
   github: {
-    // release: true,
-    // releaseName: `${packageName}-v${version}`,
+    release: true,
+    releaseName: `${packageName}-v${version}`,
   },
   hooks: {
-    "before:bump": "turbo build",
-    // "before:git:release": ["git add --all"],
+    "before:git:release": ["git add --all"],
   },
 };
