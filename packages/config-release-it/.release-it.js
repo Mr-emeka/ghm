@@ -47,14 +47,13 @@ module.exports = {
   },
   npm: {
     publish: false,
-    versionArgs: ["--workspaces false"],
   },
   github: {
-    release: true,
-    releaseName: `${packageName}-v${version}`,
+    // release: true,
+    // releaseName: `${packageName}-v${version}`,
   },
   hooks: {
     "before:bump": "turbo build",
-    "before:git:release": ["git add --all"],
+    // "before:git:release": ["git add --all"],
   },
 };
