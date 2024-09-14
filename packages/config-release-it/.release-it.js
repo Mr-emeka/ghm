@@ -36,7 +36,7 @@ module.exports = {
       },
     },
     "@release-it/bumper": {
-      in: "package.json", // using arbitrary json file to hold the version instead
+      in: ".json", // using arbitrary json file to hold the version instead
       out: "package.json",
     },
   },
@@ -58,6 +58,6 @@ module.exports = {
     releaseName: `${packageName}-v${version}`,
   },
   hooks: {
-    "before:git:release": ["git add --all"],
+    // "before:git:release": ["git add --all"],
   },
 };
