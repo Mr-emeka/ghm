@@ -1,5 +1,6 @@
 {
-  "name": "@repo/ui",
+  "name": "@ghm/ui",
+  "private": true,
   "version": "0.1.0",
   "sideEffects": [
     "**/*.css"
@@ -23,10 +24,10 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@repo/config-release-it": "workspace:*",
-    "@repo/eslint-config": "workspace:*",
-    "@repo/tailwind-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@ghm/config-release-it": "workspace:*",
+    "@ghm/eslint-config": "workspace:*",
+    "@ghm/tailwind-config": "workspace:*",
+    "@ghm/typescript-config": "workspace:*",
     "@types/react": "^18.2.61",
     "autoprefixer": "^10.4.18",
     "postcss": "^8.4.35",
