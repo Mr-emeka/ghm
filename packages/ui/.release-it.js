@@ -1,1 +1,1 @@
-module.exports = require('@repo/config-release-it');
+module.exports = require('@ghm/config-release-it');
