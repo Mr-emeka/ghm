@@ -19,7 +19,7 @@ pnpm add @ghm/cli -g
 ```
 
 ```sh
-bun @ghm/cli -g
+bun add @ghm/cli -g
 ```
 
 ### Usage:
