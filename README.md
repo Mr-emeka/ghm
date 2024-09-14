@@ -6,8 +6,31 @@ A cli tool to manage multiple github accounts on a single device
 
 ### Installation:
 
+```sh
+npm install @ghm/cli -g
+```
 
-### Usage: 
+```sh
+yarn add @ghm/cli -g
+```
+
+```sh
+pnpm add @ghm/cli -g
+```
+
+```sh
+bun @ghm/cli -g
+```
+
+### Usage:
+```sh
+ghm init account --email speak2c.emeka@gmail.com --account work
+```
+
+
+
+## Contribution 
+
 
 
 
