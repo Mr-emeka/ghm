@@ -1,4 +1,18 @@
-# Turborepo Tailwind CSS starter
+# Github Manager (@ghm/cli)
+A cli tool to manage multiple github accounts on a single device
+
+
+## @ghm/cli  Installation and Usage 
+
+### Installation:
+
+
+### Usage: 
+
+
+
+
+## Turborepo Tailwind CSS starter
 
 This is an official starter Turborepo.
 
@@ -48,11 +62,4 @@ For example, in [tailwind.config.js](packages/tailwind-config/tailwind.config.js
 
 If you choose this strategy, you can remove the `tailwindcss` and `autoprefixer` dependencies from the `ui` package.
 
-### Utilities
 
-This Turborepo has some additional tools already setup for you:
-
-- [Tailwind CSS](https://tailwindcss.com/) for styles
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
