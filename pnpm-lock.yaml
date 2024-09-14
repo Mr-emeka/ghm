@@ -98,7 +98,7 @@ importers:
         specifier: ^14.2.3
         version: 14.2.3
       '@repo/config-release-it':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/config-release-it
       '@repo/eslint-config':
         specifier: workspace:*
@@ -170,7 +170,7 @@ importers:
         version: 18.2.0
     devDependencies:
       '@repo/config-release-it':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../config-release-it
       '@repo/eslint-config':
         specifier: workspace:*
