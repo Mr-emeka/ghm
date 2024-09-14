@@ -1,0 +1,1 @@
+module.exports = require('@ghm/config-release-it');
