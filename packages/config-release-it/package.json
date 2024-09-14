@@ -1,6 +1,6 @@
 {
   "name": "@repo/config-release-it",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": ".release-it.js",
   "scripts": {
     "release": "release-it --ci"
