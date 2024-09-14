@@ -1,6 +1,7 @@
 const version = '${version}';
 const fs = require('fs');
 const path = require('path');
+const { release } = require('process');
 
 // Read package.json to get the package name
 const packageJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json'), 'utf8'));
@@ -53,6 +54,7 @@ module.exports = {
   },
   npm: {
     publish: false,
+    release: false
   },
   github: {
     release: true,
