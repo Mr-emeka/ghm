@@ -1,1 +1,1 @@
-export * from "@repo/config-release-it.js";
+import '@repo/config-release-it'
