@@ -17,7 +17,7 @@
     "lint": "eslint src/",
     "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
     "type-check": "tsc --noEmit",
-    "release": ".release-it --ci"
+    "release": "release-it --ci"
   },
   "peerDependencies": {
     "react": "^18.2.0"
