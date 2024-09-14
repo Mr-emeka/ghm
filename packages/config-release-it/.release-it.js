@@ -30,14 +30,18 @@ module.exports = {
           type: "docs",
           section: "Documentations",
         },
+        {
+          type: "chore",
+          section: "Release",
+        },
       ],
       gitRawCommitsOpts: {
         path: ".",
       },
     },
     "@release-it/bumper": {
-      in: ".json", // using arbitrary json file to hold the version instead
-      out: "package.json",
+      in: "package.json", // using arbitrary json file to hold the version instead
+      out: "package-out.json",
     },
   },
   git: {
@@ -58,6 +62,6 @@ module.exports = {
     releaseName: `${packageName}-v${version}`,
   },
   hooks: {
-    // "before:git:release": ["git add --all"],
+    "before:git:release": ["git add --all"],
   },
 };
