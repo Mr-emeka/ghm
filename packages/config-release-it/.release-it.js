@@ -49,7 +49,7 @@ module.exports = {
     tagName: `${packageName}-v${version}`,
     pushRepo: "git@github.com:mr-emeka/ghm.git",
     commitsPath: ".",
-    commitMessage: ` chore(${scope}): released version v${version} [no ci]`,
+    commitMessage: `chore(${scope}): released version v${version} [no ci]`,
     requireCommits: true,
     requireCommitsFail: false,
   },
