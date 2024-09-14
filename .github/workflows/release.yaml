@@ -55,7 +55,7 @@ jobs:
 
       - name: Install deps
         if: steps.node-cache.outputs.cache-hit != 'true'
-        run: pnpm install ci
+        run: pnpm install ci -w
 
       - name: Setup git
         run: |
