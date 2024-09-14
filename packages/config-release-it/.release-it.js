@@ -5,7 +5,7 @@ const path = require('path');
 const packageJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json'), 'utf8'));
 const packageName = packageJson.name;
 const scope = packageName.split("/")[1];
-
+const version = packageJson.version;
 
 module.exports = {
   plugins: {
