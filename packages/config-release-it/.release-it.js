@@ -1,8 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // Read package.json to get the package name
-const packageJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json'), 'utf8'));
+const packageJson = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, "package.json"), "utf8")
+);
 const packageName = packageJson.name;
 const scope = packageName.split("/")[1];
 const version = packageJson.version;
@@ -55,13 +57,16 @@ module.exports = {
   },
   npm: {
     publish: false,
-    release: false
+    release: false,
   },
   github: {
     release: true,
     releaseName: `${packageName}-v${version}`,
   },
   hooks: {
-    "before:git:release": ["git add --all"],
+    "before:git:release": [
+      "git add --all",
+      'git commit -m "chore: pre-release changes [skip ci]"',
+    ],
   },
 };
