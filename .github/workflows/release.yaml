@@ -73,6 +73,6 @@ jobs:
       - name: Release
         run: |
             git status 
-            pnpm release --cache-dir=.turbo --verbose
+            pnpm release --cache-dir=.turbo
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
