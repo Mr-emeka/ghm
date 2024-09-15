@@ -23,6 +23,7 @@ jobs:
       - name: Setup SSH keys
         uses: shimataro/ssh-key-action@v2
         with:
+          # need to be from pbcopy < ~/.ssh/id_rsa and not pbcopy < ~/.ssh/id_rsa.pub
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: github.com
 
