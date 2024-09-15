@@ -59,7 +59,10 @@ jobs:
         run: pnpm install ci -w
 
       - name: Setup git
-        uses: fregante/setup-git-user@v2
+        run: |
+            git config --global user.email 'speak2c.emeka@gmail.com'
+            git config --global user.name 'mr-emeka'
+
 
       - name: Check Git status
         run: |
