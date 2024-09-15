@@ -64,7 +64,7 @@ module.exports = {
     releaseName: `${packageName}-v${version}`,
   },
   hooks: {
-    "before:git:release": [
+    "before:init": [
       "git add --all",
       'git commit -m "chore: pre-release changes [skip ci]"',
     ],
