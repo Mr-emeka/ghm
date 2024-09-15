@@ -54,6 +54,7 @@ module.exports = {
     commitMessage: `chore(${scope}): released version v${version} [no ci]`,
     requireCommits: true,
     requireCommitsFail: false,
+    requireCleanWorkingDir: false
   },
   npm: {
     publish: false,
@@ -64,9 +65,9 @@ module.exports = {
     releaseName: `${packageName}-v${version}`,
   },
   hooks: {
-    "before:init": [
-      "git add --all",
-      'git commit -m "chore: pre-release changes [skip ci]"',
-    ],
+    // "before:init": [
+    //   "git add --all",
+    //   'git commit -m "chore: pre-release changes [skip ci]"',
+    // ],
   },
 };
